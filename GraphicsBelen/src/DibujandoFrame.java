@@ -25,8 +25,8 @@ class Ventana extends JFrame {
     JButton limpiar;
 
     Ventana() {
-        initJFrame();
         initComponent();
+        initJFrame();
         this.addMouseMotionListener(
                 new MouseMotionAdapter() {
                     @Override
@@ -61,9 +61,9 @@ class Ventana extends JFrame {
         setVisible(true);
     }
 
-    public void initComponent() {
-        limpiar = new JButton("Limpiar");
-        add(limpiar, BorderLayout.SOUTH);
+        public void initComponent() {
+            limpiar = new JButton("Limpiar");
+            add(limpiar, BorderLayout.SOUTH);
         /*@Override
         public void paint(Graphics g) {
             super.paint(g);

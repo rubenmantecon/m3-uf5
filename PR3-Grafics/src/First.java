@@ -1,12 +1,17 @@
 import javax.swing.*;
 
 public class First extends JFrame {
-    First() {
+    //Atributos
+    JButton button;
+    String optionPane;
+    int resultPane;
 
+     //Contructor
+    First() {
+        initComponents();
     }
 
     public void initJFrame() {
-        setSize(500, 500);
         repaint();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
@@ -14,6 +19,22 @@ public class First extends JFrame {
     }
 
     public void initComponents(){
+        try {
+
+            optionPane = JOptionPane.showInputDialog(rootPane, "Introduce un número",
+                    "Entrada",JOptionPane.QUESTION_MESSAGE);
+            if (optionPane != null) {
+                double average= Math.floor(Integer.parseInt(optionPane) / 2);
+                resultPane = JOptionPane.showConfirmDialog(rootPane, "El resultado es: " + average,
+                        "Resultado", JOptionPane.DEFAULT_OPTION);
+            }
+        } catch (NumberFormatException exception){
+            int seleccion = JOptionPane.showOptionDialog(
+                    rootPane, "I need a number.", "You failed",
+                    JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE,
+                    null, null, null
+            );
+        }
 
     }
 }
