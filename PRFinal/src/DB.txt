@@ -1,0 +1,7 @@
+1;Rubén;Mantecón Ferré;12345678Z;rmantecon;rbn;0;0;
+2;David;Martínez;6307378Z;dmartinez;dvd;0;0;
+3;Juan;Gómez;564589235Y;jgomez;jn;0;0;
+4;Helena;Galindo;7835947L;hgalindo;hln;0;0;
+5;Marta;Serrano;0673748N;mserrano;mrt;0;0;
+6;Laia;Rius;8752306G;lrius;laia;0;0;
+7;Hello;it's;me;

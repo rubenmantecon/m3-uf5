@@ -44,9 +44,13 @@ class Ventana extends JFrame {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        //int seleccion = JOptionPane.showOptionDialog(rootPane, "Desea liarla parda?", "A BORRAR", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[]{"Sí", "No"}, "No");
-                        //String texto = JOptionPane.showInputDialog(rootPane, "Escriu el nom: ", "DATOS", JOptionPane.INFORMATION_MESSAGE);
-                        Object texto = JOptionPane.showInputDialog(rootPane, "Escriu el nom: ", "DATOS", JOptionPane.INFORMATION_MESSAGE, null, new Object[] {"AWS1", "AWS2", "AMS"}, "AWS2");
+                        //int seleccion = JOptionPane.showOptionDialog(rootPane, "Desea liarla parda?", "A BORRAR",
+                        // JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[]{"Sí", "No"}, "No");
+                        //String texto = JOptionPane.showInputDialog(rootPane, "Escriu el nom: ", "DATOS",
+                        // JOptionPane.INFORMATION_MESSAGE);
+                        Object texto = JOptionPane.showInputDialog(rootPane, "Escriu el nom: ", "DATOS",
+                                JOptionPane.INFORMATION_MESSAGE, null,
+                                new Object[] {"AWS1", "AWS2", "AMS"}, "AWS2");
 
                     }
                 }
